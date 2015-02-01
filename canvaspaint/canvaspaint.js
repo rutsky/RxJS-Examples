@@ -1,5 +1,5 @@
 (function (global, undefined) {
-    // Calcualte offset either layerX/Y or offsetX/Y
+    // Calculate offset either layerX/Y or offsetX/Y
     function getOffset(event) {
         return { 
             offsetX: event.offsetX === undefined ? event.layerX : event.offsetX,
