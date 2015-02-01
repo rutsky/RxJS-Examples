@@ -3,7 +3,7 @@
     // Search Wikipedia for a given term
     function searchWikipedia(term) {
         var cleanTerm = global.encodeURIComponent(term);
-        var url = 'http://en.wikipedia.org/w/api.php?action=opensearch&format=json&search='
+        var url = 'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search='
             + cleanTerm + '&callback=JSONPCallback';
         return Rx.Observable.getJSONPRequest(url);
     }
